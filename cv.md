@@ -38,5 +38,28 @@ function mygcd(x,y){
 }
 ```
 
+Experience
+-------------
+
+Completed courses and trainings
+:   Self-study on online platforms
+   * [Basics of programming](https://stepik.org/)
+   * [JavaScript](https://learn.javascript.ru/)
+   * [HTML & SCC](https://webref.ru/)
+
+Educational projects
+:   **it's empty here at the moment**
+
+Education
+------------
+
+2003-2008
+:   **Automated systems technician**; Сollege
+
+Human Languages
+---------------
+
+  * English (A1)
  
+
 
