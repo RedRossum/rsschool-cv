@@ -81,7 +81,6 @@ body {
 
 pre {
     margin: 0;
-    background: #f8f8f8;
 }
 
 h4 {
@@ -170,10 +169,5 @@ footer a {
     .footer {
         flex-direction: column;
     }
-
-    .fix {
-        padding-left: -40px;
-    }
-
 }
 
