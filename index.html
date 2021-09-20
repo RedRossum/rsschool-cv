@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -13,15 +13,40 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
+  <header class="header" id="header">
     <h1 class="nickname">RedRossum</h1>
     <img src="image.jpg" alt="avatar">
   </header>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__body">
+        <button class="nav__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="#home" class='nav__link'>Home</a></li>
+            <li><a href="#contacts" class='nav__link'>Contacts</a></li>
+            <li><a href="#brief" class='nav__link'>About me</a></li>
+            <li><a href="#experience" class='nav__link'>Experience</a></li>
+            <li><a href="#code" class='nav__link'>Code examples</a></li>
+            <li><a href="#education" class='nav__link'>Education</a></li>
+            <li><a href="#skills" class='nav__link'>Skills</a></li>
+            <li><a href="#languages" class='nav__link'>Languages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <main class="main">
     <aside class="skill-side">
+      <a class="anchor" id="education"></a>
       <div><h2>Education</h2>
         <p>2003-2008 <br>Automated systems technician; <br> College</p></div>
 
+      <a class="anchor" id="skills"></a>
       <div><h2>Skills</h2>
         <ul class="skill-side-ul">
           <li>JavaScript</li>
@@ -30,11 +55,12 @@
           <li>Linux</li>
         </ul>
       </div>
-
+      <a class="anchor" id="languages"></a>
       <div><h2>Languages</h2>
         <p>English (A1)</p></div>
     </aside>
 
+    <a class="anchor" id="contacts"></a>
     <div class="content">
       <section class="contacts">
         <h4>Contacts:</h4>
@@ -43,7 +69,7 @@
           <li><span>Phone</span> +79195212802</li>
         </ul>
       </section>
-
+      <a class="anchor" id="brief"></a>
       <section class="main-info">
         <h2>Brief information about me</h2>
         <p>
@@ -62,6 +88,7 @@
           Therefore, I will be able to devote a huge amount of time to learning.
         </p>
 
+        <a class="anchor" id="experience"></a>
         <h2>Experience</h2>
         <h3>Completed courses and trainings</h3>
         <ul>
@@ -70,6 +97,7 @@
           <li><a href="https://webref.ru/">HTML & SCC</a></li>
         </ul>
 
+        <a class="anchor" id="code"></a>
         <h2>Code examples</h2>
         <pre class="fix">
           <code>
@@ -84,19 +112,26 @@
   }
           </code>
         </pre>
+        <a class="github" href="https://github.com/RedRossum">
+          <img class="icon-code" src="github.svg" alt="Github Icon">
+          <p>More code examples on my Github</p>
+        </a>
       </section>
     </div>
   </main>
   <footer class="footer">
+    <a href="https://www.codewars.com/users/RedRossum">
+      <img src="codewars.png" alt="Codewars Icon" width="128" height="32">
+    </a>
     <a class="github" href="https://github.com/RedRossum">
       <img class="icon" src="github.svg" alt="Github Icon">
       <p>Visit my GitHub</p>
     </a>
-    <p>© 2021</p>
     <a href="https://rs.school/js/">
       <img src="https://rs.school/images/rs_school_js.svg" alt="Rsschool Icon" width="75" height="28">
     </a>
   </footer>
 </div>
+<script src='script.js'></script>
 </body>
 </html>
