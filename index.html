@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport"
@@ -7,24 +7,47 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CV</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 <div class="wrapper">
-  <header class="header">
+  <header class="header" id="header">
     <h1 class="nickname">RedRossum</h1>
     <img src="image.jpg" alt="avatar">
   </header>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__body">
+        <button class="nav__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="#home" class='nav__link'>Home</a></li>
+            <li><a href="#contacts" class='nav__link'>Contacts</a></li>
+            <li><a href="#brief" class='nav__link'>About me</a></li>
+            <li><a href="#experience" class='nav__link'>Experience</a></li>
+            <li><a href="#code" class='nav__link'>Code examples</a></li>
+            <li><a href="#portfolio" class='nav__link'>Portfolio</a></li>
+            <li><a href="#education" class='nav__link'>Education</a></li>
+            <li><a href="#skills" class='nav__link'>Skills</a></li>
+            <li><a href="#languages" class='nav__link'>Languages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
   <main class="main">
-    <section class="contacts">
-      <h4>Contacts:</h4>
-      <ul class="contacts-ul">
-        <li><span>Email</span> redrossum@gmail.com</li>
-        <li><span>Phone</span> +79195212802</li>
-      </ul>
-    </section>
     <aside class="skill-side">
+      <a class="anchor" id="education"></a>
       <div><h2>Education</h2>
         <p>2003-2008 <br>Automated systems technician; <br> College</p></div>
+
+      <a class="anchor" id="skills"></a>
       <div><h2>Skills</h2>
         <ul class="skill-side-ul">
           <li>JavaScript</li>
@@ -33,56 +56,99 @@
           <li>Linux</li>
         </ul>
       </div>
+      <a class="anchor" id="languages"></a>
       <div><h2>Languages</h2>
         <p>English (A1)</p></div>
     </aside>
-    <section class="main-info">
-      <h2>Brief information about me</h2>
-      <p>
-        I want to get the necessary skills to get started with web development as soon as possible. But the priority is
-        not to study the platform, but to get the ability to analyze the problem, form an algorithm for solving them,
-        and
-        implement this algorithm in code. In my opinion, this is programming, it does not depend on the language and
-        determines the way of thinking.
-      </p>
 
-      <p>
-        I have learned some of the basics and have almost no practical experience, but I can compensate for this with a
-        huge interest in development, and although my experience is modest, I think I have found my life’s work.
-        Therefore, I will be able to devote a huge amount of time to learning.
-      </p>
-      <h2>Experience</h2>
-      <h3>Completed courses and trainings</h3>
-      <ul>
-        <li><a href="https://stepik.org/catalog">Basics of programming</a></li>
-        <li><a href="https://learn.javascript.ru/">JavaScript</a></li>
-        <li><a href="https://webref.ru/">HTML & SCC</a></li>
-      </ul>
-      <h2>Code examples</h2>
-      <pre>
-      <code>
-        function myGcd(x,y){
-          function gcd(a, b) {
-            if (b === 0) {
-              return a;
-            }
-            return gcd (b, a % b)
-          }
-          return gcd(y, x % y)
-        }</code>
-    </pre>
-    </section>
+    <a class="anchor" id="contacts"></a>
+    <div class="content">
+      <section class="contacts">
+        <h4>Contacts:</h4>
+        <ul class="contacts-ul">
+          <li><span>Email</span> redrossum@gmail.com</li>
+          <li><span>Phone</span> +79195212802</li>
+        </ul>
+      </section>
+      <a class="anchor" id="brief"></a>
+      <section class="main-info">
+        <h2>Brief information about me</h2>
+        <p>
+          I want to get the necessary skills to get started with web development as soon as possible. But the priority
+          is
+          not to study the platform, but to get the ability to analyze the problem, form an algorithm for solving them,
+          and
+          implement this algorithm in code. In my opinion, this is programming, it does not depend on the language and
+          determines the way of thinking.
+        </p>
+
+        <p>
+          I have learned some of the basics and have almost no practical experience, but I can compensate for this with
+          a
+          huge interest in development, and although my experience is modest, I think I have found my life’s work.
+          Therefore, I will be able to devote a huge amount of time to learning.
+        </p>
+
+        <a class="anchor" id="experience"></a>
+        <h2>Experience</h2>
+        <h3>Completed courses and trainings</h3>
+        <ul>
+          <li><a href="https://stepik.org/catalog">Basics of programming</a></li>
+          <li><a href="https://learn.javascript.ru/">JavaScript</a></li>
+          <li><a href="https://webref.ru/">HTML & SCC</a></li>
+        </ul>
+
+        <a class="anchor" id="code"></a>
+        <h2>Code examples</h2>
+        <pre class="fix">
+          <code>
+  function myGcd(x,y){
+    function gcd(a, b) {
+      if (b === 0) {
+        return a;
+      }
+      return gcd (b, a % b);
+      }
+    return gcd(y, x % y);
+  }
+          </code>
+        </pre>
+        <a class="github" href="https://github.com/RedRossum">
+          <img class="icon-code" src="github.svg" alt="Github Icon">
+          <p>More code examples on my Github</p>
+        </a>
+      </section>
+
+      <section class="portfolio">
+        <a class="anchor" id="portfolio"></a>
+        <h2>Portfolio</h2>
+        <figure class="portfolio-figure">
+          <a class="portfolio-fig"
+             href="https://rolling-scopes-school.github.io/redrossum-JSFE2021Q1/wildlife/"
+             target="_blank">
+            <img class="portfolio-img" src="wildlife.png" alt="Wildlife">
+            <figcaption>
+              <h3>Wildlife</h3>
+              <p>HTML and CSS</p>
+            </figcaption>
+          </a>
+        </figure>
+      </section>
+    </div>
   </main>
   <footer class="footer">
-      <a class="github" href="https://github.com/RedRossum">
-        <img class="icon" src="github.svg" alt="Github Icon">
-        <p>Visit my GitHub</p>
-      </a>
-      <p>© 2021</p>
-      <a href="https://rs.school/js/">
-        <img src="https://rs.school/images/rs_school_js.svg" alt="Rsschool Icon" width="75" height="28">
-      </a>
+    <a href="https://www.codewars.com/users/RedRossum">
+      <img src="codewars.png" alt="Codewars Icon" width="128" height="32">
+    </a>
+    <a class="github" href="https://github.com/RedRossum">
+      <img class="icon" src="github.svg" alt="Github Icon">
+      <p>Visit my GitHub</p>
+    </a>
+    <a href="https://rs.school/js/">
+      <img src="https://rs.school/images/rs_school_js.svg" alt="Rsschool Icon" width="75" height="28">
+    </a>
   </footer>
 </div>
+<script src='script.js'></script>
 </body>
 </html>
