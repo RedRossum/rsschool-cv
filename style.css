@@ -22,6 +22,10 @@ html, body {
   --max-width: 900px;
 }
 
+h1, h2, h3, h4 {
+  font-family: Arial, sans-serif;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -248,7 +252,7 @@ a {
   padding: 0 20px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 850px) {
   body.lock {
     overflow: hidden;
   }
@@ -546,5 +550,41 @@ a {
   position: relative;
   top: -70px;
   visibility: hidden;
+}
+
+.portfolio {
+ padding-left: 35px;
+}
+
+.portfolio-figure {
+  display: inline-block;
+
+  height: 260px;
+  width: 230px;
+
+  box-shadow: 0 0 .3em black;
+  transition: 0.2s;
+
+  margin-right: 20px;
+  margin-left: 20px;
+
+}
+
+.portfolio-figure:hover {
+  transform: scale(1.1);
+}
+
+.portfolio-fig:hover {
+  opacity: 100%;
+}
+
+.portfolio-img {
+  object-fit: cover;
+  height: 160px;
+  width: 230px;
+}
+
+figcaption {
+  text-align: center;
 }
 
